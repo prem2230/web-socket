@@ -1,7 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { User } from '../models/User';
 import { IUser, LoginRequest, RegisterRequest } from '../types';
-import { AppError, handleError } from '../utils/errorHandler';
 import { validateLogin, validateRegister } from '../middleware/validation';
 
 export class AuthService {
